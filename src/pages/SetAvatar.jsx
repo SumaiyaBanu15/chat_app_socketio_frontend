@@ -12,10 +12,10 @@ function SetAvatar() {
 
   const api = "https://api.multiavatar.com/45678945"; //open source avatar api
 
-  // eslint-disable-next-line
+  // // eslint-disable-next-line
   const navigate = useNavigate();
   const [avatars, SetAvatar] = useState([]);
-  // eslint-disable-next-line
+  // // eslint-disable-next-line
   const [isLoading, setIsLoading] = useState(true);
   const [selectedAvatar, setSelectedAvatar] = useState(undefined);
 
@@ -23,7 +23,7 @@ function SetAvatar() {
     if(!localStorage.getItem('chat-app-user')){
       navigate('/login');
     }
-    // eslint-disable-next-line
+    // //eslint-disable-next-line
   }, []);
 
   const setProfilePic = async ()=> {
@@ -67,7 +67,7 @@ function SetAvatar() {
       setIsLoading(false);
     }
     fetchData();
-    // eslint-disable-next-line
+    // //eslint-disable-next-line
   }, []);
 
 
