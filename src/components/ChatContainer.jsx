@@ -32,7 +32,8 @@ function ChatContainer({ currChat, currUser, socket }) {
     }
   }
    fetchRes();
-  }, [currChat, currUser._id]);
+   
+  }, [currChat]);
 
   const handleSendMsg = async (msg) => {
     try{
