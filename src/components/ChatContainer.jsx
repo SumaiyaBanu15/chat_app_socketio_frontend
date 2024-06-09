@@ -32,7 +32,7 @@ function ChatContainer({ currChat, currUser, socket }) {
     }
   }
    fetchRes();
-   // eslint-disable-next-line
+   // //eslint-disable-next-line
   }, [currChat]);
 
   const handleSendMsg = async (msg) => {
@@ -63,7 +63,7 @@ function ChatContainer({ currChat, currUser, socket }) {
        setArrivalMsg({ fromSelf: false, message: msg })
       })
     }
-   }, [socket]);
+   }, []);
 
    useEffect(()=>{
      arrivalMsg && setMessages((prev) => [...prev, arrivalMsg]);
