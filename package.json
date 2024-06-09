@@ -22,7 +22,9 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.14.5"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "babel-preset-react-app": "^10.0.0"
+
   },
   "scripts": {
     "start": "react-scripts start",
@@ -48,5 +50,4 @@
       "last 1 safari version"
     ]
   }
-  
 }
