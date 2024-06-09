@@ -32,7 +32,7 @@ function ChatContainer({ currChat, currUser, socket }) {
     }
   }
    fetchRes();
-  }, [currChat]);
+  }, [currChat, currUser._id]);
 
   const handleSendMsg = async (msg) => {
     try{
@@ -62,7 +62,7 @@ function ChatContainer({ currChat, currUser, socket }) {
        setArrivalMsg({ fromSelf: false, message: msg })
       })
     }
-   }, []);
+   }, [socket]);
 
    useEffect(()=>{
      arrivalMsg && setMessages((prev) => [...prev, arrivalMsg]);

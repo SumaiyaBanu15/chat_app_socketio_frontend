@@ -24,7 +24,7 @@ function SetAvatar() {
       navigate('/login');
     }
     // //eslint-disable-next-line
-  }, []);
+  }, [navigate]);
 
   const setProfilePic = async ()=> {
     if(selectedAvatar === undefined){
@@ -67,7 +67,7 @@ function SetAvatar() {
       setIsLoading(false);
     }
     fetchData();
-    // //eslint-disable-next-line
+    //eslint-disable-next-line
   }, []);
 
 
