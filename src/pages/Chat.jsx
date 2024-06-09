@@ -29,7 +29,7 @@ function Chat() {
   }
    userData();
     //// eslint-disable-next-line
-  }, []);
+  }, [navigate]);
 
   useEffect(()=>{
   if(currUser){
@@ -53,7 +53,7 @@ function Chat() {
     }
     fetchData();
     //// eslint-disable-next-line
-  },[currUser]);
+  },[currUser , navigate]);
 
   const handleChatChange = (chat)=>{
     setCurrChat(chat);
