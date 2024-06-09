@@ -13,7 +13,7 @@ function Contacts({ contacts, currUser, changeChat }) {
       setCurrUserImg(currUser.avatarImage);
       setCurrUserName(currUser.username);
     }
-    //// eslint-disable-next-line
+    // // eslint-disable-next-line
   }, [currUser]);
 
   // // eslint-disable-next-line

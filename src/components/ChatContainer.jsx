@@ -32,7 +32,7 @@ function ChatContainer({ currChat, currUser, socket }) {
     }
   }
    fetchRes();
-   
+   // eslint-disable-next-line
   }, [currChat]);
 
   const handleSendMsg = async (msg) => {
